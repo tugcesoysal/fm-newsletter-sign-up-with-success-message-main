@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgDiv{
+    background-image: url('assets/images/illustration-sign-up-mobile.svg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.formDiv{
+    width: calc(100% - 40px);
+padding: 0 20px;
+}
+
+.header{
+    font-size: 2.5rem;
+    color: hsl(235, 18%, 26%);
+}
+
+.content{
+    color: hsl(235, 18%, 26%);
+}
+
+ul{
+    padding: 0;
+    color: hsl(235, 18%, 26%);
+    margin-bottom: 50px;
+}
+
+ul li {
+   list-style: none;
+   padding: 0;
+   line-height: 1.5;
+   margin-bottom: 10px;
+   background-image: url('assets/images/icon-list.svg');
+   background-repeat: no-repeat;
+   padding-left: 40px;
+
+}
+
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-label{
+font-weight: 700;
+}
+
+.label-error{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.error-message{
+    font-size: 0.7rem;
+}
+
+
+input{
+    border-radius: 10px;
+    height: 70px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+input:focus{
+    outline: 1px solid hsl(4, 100%, 67%);
+}
+
+.email-input{
+    border: 1px solid hsl(231, 7%, 60%);
+}
+
+.error-input{
+    border: 1px solid hsl(4, 100%, 67%);
+    background-color: hsl(4, 100%, 67%, 0.2);
+    color: hsl(4, 100%, 67%);
+}
+
+.error-input::placeholder {
+    color:hsl(4, 100%, 67%);
+}
+
+.error-message{
+    color:hsl(4, 100%, 67%);
+}
+
+.email-input::placeholder{
+    font-weight: 700;
+    font-size: 1rem;
+    opacity: 0.6;
+}
+
+.email-input::{
+    color:hsl(231, 7%, 60%);
+}
+
+.email-input:hover{
+    cursor: pointer;
+}
+
+.sub-button{
+    height: 72px;
+    border-radius: 10px;
+    border:none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 60px;
+}
+
+.sub-button:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+
+.attribution{
+    font-size: 0.7rem;
+    color: hsl(235, 18%, 26%);
+    margin-bottom: 30px;
+}
+
+a{
+    color: hsl(235, 18%, 26%);
+    text-decoration: none;
+}
+
+a:hover{
+    color:hsl(4, 100%, 67%);
+}
+
+.thanks-container{
+    margin-top: 20%;
+    padding: 10px;
+    background-color: white;
+}
+
+.thanks-header{
+    text-align:start;
+    padding-right: 20%;
+    color: hsl(235, 18%, 26%);
+}
+
+.thanks-content{
+    color: hsl(235, 18%, 26%);
+    font-size: 1rem;
+}
+
+.thanks-button{
+    height: 60px;
+    width: 100%;
+    padding: 0 20%;
+    border-radius: 10px;
+    border:none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 70%;
+    cursor: pointer;
+}
+
+
+
+@media (min-width:750px) {
+    body{
+       background-color: hsl(235, 18%, 26%);
+       padding: 15% auto;
+    }
+
+    .main{
+        flex-direction:row-reverse;
+        padding: 20px;
+        background-color: white;
+        border-radius: 15px;
+        margin: 10%;
+    }
+
+    .imgDiv{
+        background-image: url('assets/images/illustration-sign-up-desktop.svg');
+        height: 600px;
+        flex: 1;
+    }
+
+    .formDiv{
+        flex:1;
+        margin-right: 15px ;
+    }
+
+
+    .thanks-container{
+        margin: 20% auto;
+        width: 50%;
+        border-radius: 10px;
+        padding: 5%;
+    }
+
+    .thanks-header{
+       font-size: 3rem;
+       color: hsl(235, 18%, 26%);
+       line-height: 1;
+    }
+
+    .thanks-content{
+        color:hsl(235, 18%, 26%);
+    }
+
+    .email-conf {
+        color:hsl(234, 29%, 20%);
+        font-weight: 700;
+    }
+
+    .thanks-button{
+        margin-top: 10%;
+    }
+
+    .thanks-button:hover{
+        background-color: hsl(4, 100%, 67%);
+    }
+
+   
+
+
+}
